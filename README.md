@@ -1,5 +1,5 @@
 ### npm start
-For localhost server start up.
+Run this command first for localhost server start up.
 
 ### npm run electron:start
-For desktop app.
+When server is running run this command for desktop app.
