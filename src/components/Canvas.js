@@ -202,7 +202,7 @@ function Canvas() {
                                 <Checkbox 
                                 checked={inputItem} 
                                 onChange={handleInputItemChange}
-                                color='defaultgit '
+                                color='default'
                             />} 
                             label="Input Values" />
                     </Box>
