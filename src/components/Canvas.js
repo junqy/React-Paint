@@ -21,7 +21,9 @@ function Canvas() {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         const roughCanvas = rough.canvas(canvas)
         
-        items.forEach(({roughEl}) => roughCanvas.draw(roughEl))
+        for (let i = 0; i < items.length ; i++) {
+            roughCanvas.draw(items[i].roughEl)
+        }
 
     }, [items])
 
@@ -118,7 +120,6 @@ function Canvas() {
                 const positionY = e.clientY - item.y1
                 setSelectedItem({...item, positionX, positionY})
                 setActionType('moving')  
-                console.log("hehe")
             }
         } else if (inputItem  && (selectedTool === 'rectangle' || selectedTool === 'circle' || selectedTool === 'line')) {
             setXDialog(e.clientX)
